@@ -1,0 +1,25 @@
+name: mac_address
+description: A new Flutter plugin to get MAC Address of Android and iOS Device
+version: 1.0.0
+homepage: https://github.com/baabale/mac_address
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+  flutter: ">=1.10.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.vdtlabs.get_mac
+        pluginClass: GetMacPlugin
+      ios:
+        pluginClass: GetMacPlugin
